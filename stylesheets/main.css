@@ -1,5 +1,5 @@
 *{
-    border: 3px solid red;
+
     box-sizing: border-box;
 }
 body{
@@ -10,18 +10,20 @@ body{
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     padding: 0;
+    margin: 0em;
 }
 .sidebar{
-    height: 63.5em;
+    height: 100vh;
     position: sticky;
     grid-area: 1 / 1 / 5 / 2;
     background-color: dodgerblue;
+    box-shadow: 5px 10px 18px #888888;
 }
 .navbar{
     position: sticky;
-    right: 0.5em;
     grid-area: 1 / 2 / 2 / 5;
     background-color: white;
+    box-shadow: 5px 10px 18px #888888;
 }
 .mainbox{
 
@@ -40,13 +42,13 @@ body{
     background-color: white;
     border-radius: 8px;
 
-
+    box-shadow: 5px 10px 18px #888888;
 }
 .sidebox{
     background-color: white;
     border-radius: 8px;
     justify-content: center;
-
+    box-shadow: 5px 10px 18px #888888;
 }
 
 .rightannounce{
@@ -54,12 +56,12 @@ body{
     margin-top: -1.5em;
 }
 .mainhero{
-    margin-top: -0.09em;
+    margin-top: 0.4em;
     padding-left: 1em;
 }
 .div11 {
-    padding-top: 3em;
-    margin-top: -5.2em;
+    padding-top: 4.5em;
+    margin-top: -5.9em;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(6, 1fr);
@@ -69,6 +71,7 @@ body{
     width: 100%;
 }
 .one{
+
     grid-area: 1 / 1 / 7 / 5;
     display: -ms-flexbox;
 }
