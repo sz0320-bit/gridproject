@@ -1,6 +1,5 @@
 *{
     font-family: Damascus;
-
 }
 
 body{
@@ -35,7 +34,7 @@ body{
     grid-row-gap: 0px;
 }
 .mainbox{
-    max-height:83.5vh ;
+    max-height:83.35vh ;
     display: grid;
     grid-area: 2 / 2 / 7 / 7;
     grid-template-columns: repeat(6, 1fr);
@@ -75,15 +74,24 @@ body{
 .sidebox{
     background-color: #1A1A1D;
     border-radius: 8px;
-    justify-content: center;
     box-shadow: 5px 10px 18px ;
     border-left: goldenrod 8px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    overflow: scroll;
 
+}
+.sidebox::-webkit-scrollbar{
+    display: none;
 }
 
 .rightannounce{
     margin-top: -0.09em;
     margin-top: -1.5em;
+    height: fit-content;
+    position: absolute;
 }
 .mainhero{
     margin-top: 0.4em;
@@ -237,7 +245,7 @@ h4{
     background-color: teal;
     color: white;
     border-radius: 36px;
-    padding: 0.2em 0.8em;
+    padding: 0.2em  0.8em 0em;
     border: 2px white solid;
     font-size: 1.5em;
 }
@@ -261,6 +269,19 @@ h4{
     height: 3em;
     width: 3em;
 }
+.para1{
+    display: -ms-flexbox;
+    padding: 1em;
+    margin-top: -1em;
+    border-bottom: 2px solid white;
+}
+.para1 h2{
+    font-weight: 700;
+}
+.para1 p{
+    margin-top: -1.25em;
+}
+
 
 #div1  { grid-area: 1 / 1 / 3 / 3;margin: 1em}
 #div2  { grid-area: 3 / 1 / 5 / 3;margin: 1em}
